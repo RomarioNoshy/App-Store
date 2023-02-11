@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/index_style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <!-- =============my store============ -->
+  <div class="container">
+    <h1 class="text-center text-primary py-5">My Store</h1>
+    <input id="pName" class="form-control mb-3" type="text" placeholder="Name Prodact">
+    <input id="pPrise" class="form-control mb-3" type="number" placeholder="prise Prodact">
+    <input id="pCate" class="form-control mb-3" type="text" placeholder="category Prodact">
+    <textarea id="pDesc" class="form-control mb-3" type="text" placeholder="descrptin Prodact"></textarea>
+    <button class="btn btn-info mb-5" onclick="addProduct()">Add brodact</button>
+  </div>
+
+  <input oninput="searchProdact(this.value)" class="form-control w-75 m-auto mb-5" type="search" placeholder="Search">
+
+  <table class="table w-75 m-auto bg-dark text-light text-center">
+    <thead>
+      <td>index</td>
+      <td>Name</td>
+      <td>Prise</td>  
+      <td>category</td>
+      <td>descraption</td>
+      <td class="text-warning">Updat</td>
+      <td class="text-danger">Deleat</td>
+    </thead>
+
+    <tbody id="prodact_table">
+      
+    </tbody>
+  </table>
+
+
+
+  <script src="js/index_js.js"></script>
+</body>
+
+</html>
